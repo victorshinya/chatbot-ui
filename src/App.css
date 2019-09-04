@@ -1,33 +1,104 @@
-.App {
-  text-align: center;
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #f7f3f1;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.box {
+  position: absolute;
+  top: 32px;
+  left: 50%;
+  margin-left: -700px;
+  height: calc(100% - 64px);
+  width: 1400px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.06),0 2px 5px 0 rgba(0,0,0,.2);
+  background-color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.chat {
+  display: contents;
+}
+
+.chat-history {
+  width: 100%;
+  height: calc(100% - 52px);
+  overflow: scroll;
+}
+
+.chat-history .from {
+  max-width: 750px;
+  min-width: 150px;
+  width: auto;
+  background-color: #0062ff;
   color: white;
+  margin-bottom: 8px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  clear: both;
 }
 
-.App-link {
-  color: #61dafb;
+.chat-history .from-user {
+  float: right;
+  margin-right: 32px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.chat-history .from-user p, .chat-history .from-watson p {
+  margin: 8px;
+  word-wrap: break-word;
+}
+
+.chat-history .from-watson {
+  float: left;
+  margin-left: 32px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 16px;
+}
+
+.chat-history .first {
+  margin-top: 8px;
+}
+
+.input-form {
+  width: 100%;
+  height: 52px;
+}
+
+.input-form form {
+  height: 100%;
+  overflow: hidden;
+  background-color: #e0dbda;
+  display: flex;
+}
+
+.input-form input[type="text"] {
+  width: calc(97% - 52px);
+  height: 75%;
+  margin: 0px 0px 0px 8px;
+  padding: 0px 8px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  outline: none;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.input-form button {
+  width: 44px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 18px;
+  background-color: transparent;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
