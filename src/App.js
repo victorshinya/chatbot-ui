@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 
+import axios from "axios";
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaperPlane } from '@fortawesome/free-regular-svg-icons'
 
@@ -8,9 +10,10 @@ class App extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = { message: "", history: [] };
+    this.state = { message: "", history: [], context: null, session_id: null };
     this.handleChange = this.handleChange.bind(this);
     this.handleSendMessage = this.handleSendMessage.bind(this);
+    this.sendMessageHTTP();
   }
 
   handleChange = (e) => {
@@ -22,8 +25,21 @@ class App extends React.Component {
     if (this.state.message && this.state.message.length > 0) {
       this.state.history.push({ from: "user", message: this.state.message });
       this.setState({ message: "" });
-      // TODO: Send message to API
+      this.sendMessageHTTP();
     }
+  }
+
+  sendMessageHTTP() {
+    axios.post("/api/assistant", { text: this.state.message, context: this.state.context, session_id: this.state.session_id })
+        .then(response => {
+          this.setState(state => {
+            var history;
+            response.data.output.generic.map(message => {
+              history = state.history.concat({ from: "watson", message: message.text, response_type: message.response_type });
+            });
+            return { message: "", history, context: response.data.context, session_id: response.data.session_id };
+          })
+        })
   }
 
   render() {
