@@ -37,6 +37,17 @@ npm run build
 ibmcloud cf push {your_app_name}
 ```
 
+## Roadmap
+
+- [x] Handle response type: text
+- [ ] Handle response type: image
+- [ ] Handle response type: options
+- [ ] Handle response type: pause
+- [ ] Record and receive audio
+- [ ] Convert: speech to text
+- [ ] Play audio
+- [ ] Convert: text to speech
+
 ## License
 
 Copyright 2019 Victor Shinya
