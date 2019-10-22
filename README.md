@@ -52,7 +52,7 @@ ibmcloud cf push {your_app_name}
 ## Roadmap
 
 * [x] Handle response type: text
-* [ ] Handle response type: image
+* [x] Handle response type: image
 * [ ] Handle response type: options
 * [ ] Handle response type: pause
 * [ ] Record and receive audio

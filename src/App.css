@@ -61,6 +61,13 @@
   margin-top: 8px;
 }
 
+.chat-history .from img {
+  max-width: 730px;
+  max-height: 730px;
+  margin: 8px;
+  border-radius: 16px;
+}
+
 .input-form {
   width: 100%;
   height: 52px;
