@@ -13,7 +13,7 @@ A Chatbot that analyzes your sentiment and use it to answer appropriately. This 
 * [Natural Language Understanding](https://cloud.ibm.com/catalog/services/natural-language-understanding): Use advanced NLP to analyze text and extract meta-data from content such as concepts, entities, keywords, categories, sentiment, emotion, relations, and semantic roles.
 * [IBM Cloud Functions](https://cloud.ibm.com/openwhisk): FaaS (Function-as-a-Service) platform that executes functions in response to events. It is based on Apache Openwhisk project.
 
-## Deployment
+## Run locally and deploy
 
 In order to deploy the code in a cloud platform, you need to install [Node.js](https://nodejs.org/). After the installation, you can follow the steps below.
 
@@ -31,7 +31,19 @@ npm install
 npm run build
 ```
 
-### 3. Deploy to the cloud
+### 3. Build your app
+
+```sh
+npm run build
+```
+
+### 4. Run the app
+
+```sh
+npm start
+```
+
+### 5. Deploy to the cloud
 
 ```sh
 ibmcloud cf push {your_app_name}
@@ -39,14 +51,14 @@ ibmcloud cf push {your_app_name}
 
 ## Roadmap
 
-- [x] Handle response type: text
-- [ ] Handle response type: image
-- [ ] Handle response type: options
-- [ ] Handle response type: pause
-- [ ] Record and receive audio
-- [ ] Convert: speech to text
-- [ ] Play audio
-- [ ] Convert: text to speech
+* [x] Handle response type: text
+* [ ] Handle response type: image
+* [ ] Handle response type: options
+* [ ] Handle response type: pause
+* [ ] Record and receive audio
+* [ ] Convert: speech to text
+* [ ] Play audio
+* [ ] Convert: text to speech
 
 ## License
 
