@@ -3,15 +3,13 @@
 [![IBM Cloud Powered](https://img.shields.io/badge/IBM%20Cloud-powered-blue.svg)](https://cloud.ibm.com)
 [![Platform](https://img.shields.io/badge/platform-nodejs-lightgrey.svg?style=flat)](https://developer.ibm.com/node/)
 
-A Chatbot that analyzes your sentiment and use it to answer appropriately. This application was designed and developed to help new developers to start using a webchat from boilerplate code.
+A User Interface (UI) for a Chatbot application. It allows you to run a IBM Watson Assistant's Assistant on Cloud. No new code required. This application was designed and developed to accelerate the go-to-market process.
 
 ![Architecture Design](doc/source/images/architecture.jpeg)
 
 ## Components and technologies
 
 * [Watson Assistant](https://cloud.ibm.com/catalog/services/watson-assistant): Watson Assistant lets you build conversational interfaces into any application, device, or channel.
-* [Natural Language Understanding](https://cloud.ibm.com/catalog/services/natural-language-understanding): Use advanced NLP to analyze text and extract meta-data from content such as concepts, entities, keywords, categories, sentiment, emotion, relations, and semantic roles.
-* [IBM Cloud Functions](https://cloud.ibm.com/openwhisk): FaaS (Function-as-a-Service) platform that executes functions in response to events. It is based on Apache Openwhisk project.
 
 ## Run locally and deploy
 
@@ -20,8 +18,8 @@ In order to deploy the code in a cloud platform, you need to install [Node.js](h
 ### 1. Download the source code
 
 ```sh
-git clone https://github.com/victorshinya/picard.git
-cd picard
+git clone https://github.com/victorshinya/chatbot-ui.git
+cd chatbot-ui
 ```
 
 ### 2. Install all dependencies and build the app
