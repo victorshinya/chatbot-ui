@@ -15,11 +15,11 @@ const assistant = new AssistantV2({
 });
 
 app.post('/api/assistant', async (req, res) => {
-    if (!req.body.session_id) {
-        req.body.session_id = await generateNewSession();
-    }
-    console.log(`params: ${JSON.stringify(req.body)}`);
     try {
+        if (!req.body.session_id) {
+            req.body.session_id = await generateNewSession();
+        }
+        console.log(`params: ${JSON.stringify(req.body)}`);
         const response = await sendMessage(req.body);
         res.json(response);
     } catch (e) {
