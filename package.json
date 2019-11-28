@@ -1,6 +1,26 @@
 {
-  "name": "picard",
+  "name": "chatbot-ui",
   "version": "0.1.1",
+  "description": "Chatbot User Interface for Watson Assistant service",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/victorshinya/chatbot-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/victorshinya/chatbot-ui/issues"
+  },
+  "engines": {
+    "node": "10.16.x",
+    "npm": "6.13.x"
+  },
+  "keywords": [
+    "chatbot",
+    "chatbot-ui",
+    "watson",
+    "watson-assistant"
+  ],
+  "author": "Victor Shinya <vshinya@br.ibm.com>",
+  "license": "Apache-2.0",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.22",
     "@fortawesome/free-regular-svg-icons": "^5.10.2",
