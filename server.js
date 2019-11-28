@@ -59,5 +59,5 @@ sendMessage = async (body) => {
 
 const port = process.env.PORT || '8080';
 app.listen(port, () => {
-    console.log(`Picard is up and running at port ${port}`);
+    console.log(`Server is up and running at port ${port}`);
 });
