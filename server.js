@@ -1,5 +1,6 @@
 require('dotenv').config();
 const bodyParser = require('body-parser');
+const cors = require('cors');
 const express = require('express');
 const app = express();
 const path = require('path');
@@ -8,6 +9,9 @@ const AssistantV2 = require('ibm-watson/assistant/v2');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'build')));
+if (process.env.NODE_ENV === 'dev') {
+    app.use(cors());
+}
 
 const assistant = new AssistantV2({
     version: process.env.ASSISTANT_VERSION,
