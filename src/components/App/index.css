@@ -26,48 +26,6 @@
   overflow: scroll;
 }
 
-.chat-history .from {
-  max-width: 750px;
-  min-width: 150px;
-  width: auto;
-  margin: 0px 32px 8px 32px;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
-  clear: both;
-}
-
-.chat-history .from-user {
-  float: right;
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 0px;
-  background-color: #0062ff;
-  color: white;
-}
-
-.chat-history .from-user p, .chat-history .from-watson p {
-  margin: 8px;
-  word-wrap: break-word;
-}
-
-.chat-history .from-watson {
-  float: left;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 16px;
-  background-color: #e0dbda;
-  color: black;
-}
-
-.chat-history .first {
-  margin-top: 8px;
-}
-
-.chat-history .from img {
-  max-width: 730px;
-  max-height: 730px;
-  margin: 8px;
-  border-radius: 16px;
-}
-
 .input-form {
   width: 100%;
   height: 52px;
