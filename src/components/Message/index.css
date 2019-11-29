@@ -1,0 +1,41 @@
+.from {
+    max-width: 750px;
+    min-width: 150px;
+    width: auto;
+    margin: 0px 32px 8px 32px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    clear: both;
+}
+
+.from.first {
+    margin-top: 8px;
+}
+
+.from-user {
+    float: right;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 0px;
+    background-color: #0062ff;
+    color: white;
+}
+
+.from-watson {
+    float: left;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 16px;
+    background-color: #e0dbda;
+    color: black;
+}
+
+.from-user p, .from-watson p {
+    margin: 8px;
+    word-wrap: break-word;
+}
+
+.from img {
+    max-width: 730px;
+    max-height: 730px;
+    margin: 8px;
+    border-radius: 16px;
+}
