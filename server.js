@@ -62,6 +62,7 @@ sendMessage = async (body) => {
 }
 
 const port = process.env.PORT || '8080';
-app.listen(port, () => {
+const host = process.env.HOST || '0.0.0.0';
+app.listen(port, host, () => {
     console.log(`Server is up and running at port ${port}`);
 });
