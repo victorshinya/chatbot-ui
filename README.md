@@ -29,19 +29,13 @@ npm install
 npm run build
 ```
 
-### 3. Build your app
-
-```sh
-npm run build
-```
-
-### 4. Run the app
+### 3. Run the app
 
 ```sh
 npm start
 ```
 
-### 5. Deploy to the cloud
+### 4. Deploy to the cloud
 
 ```sh
 ibmcloud cf push {your_app_name}
